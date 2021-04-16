@@ -1,0 +1,90 @@
+body {
+  background-image: url("../fileStorage/stirniene/image_1.jpeg");
+  background-position: center top;
+  background-size: cover, auto;
+  background-repeat: no-repeat;
+  margin: 0px;
+}
+#navigation {
+  position: fixed;
+  width: 100%;
+  background-color: #AFAFAF;
+  z-index: 20000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.35), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#navigation div {
+  text-align: center;
+  position: absolute;
+  height: auto;
+}
+#navigation div {
+  text-align: center;
+  position: absolute;
+  height: 100%;
+  width: 5%;
+}
+#navigation div.navBar:nth-child(1) {
+  font-size: 200%;
+  background-image: url("../fileStorage/images/houseIcon.png");
+  background-position: center top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#navigation div.navBar:nth-child(1):hover {
+  background-color: #7D7D7D;
+}
+#navigation div.navBar:nth-child(2) {
+  position: absolute;
+  width: 90%;
+  height: auto;
+  margin-left: 5%;
+}
+#navigation div:nth-child(2) div {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+}
+#navigation div:nth-child(2) div#titles span_1 {
+  padding: 0% 1%;
+  font-size: 200%;
+  display: inline-block;
+  height: auto;
+  vertical-align: middle;
+}
+#navigation div#articles {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+}
+div#articles div.articleNames {
+  height: auto;
+  display: block;
+  position: absolute;
+  margin-left: 35%;
+  width: 30%;
+}
+div.elementName {
+  width: 100%;
+  background-color: #EFEFEF;
+  font-size: 200%;
+  border-bottom: solid black 1px;
+}
+div.elementName:hover {
+  background-color: #DFDFDF;
+}
+#navigation div:nth-child(2) div#titles span_1:hover {
+  background-color: #7D7D7D;
+}
+#navigation div.navBar:nth-child(3) {
+  margin-left: 95%;
+  font-size: 200%;
+  width: 5%;
+  background-image: url("../fileStorage/images/menuImage.png");
+  background-position: center top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#navigation div.navBar:nth-child(3):hover {
+  background-color: #7D7D7D;
+}
