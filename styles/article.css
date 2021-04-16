@@ -1,0 +1,23 @@
+#article {
+  font-size: 150%;
+  background-image: url("../fileStorage/images/textBackgrounTexture.jpeg");
+  background-size: contain;
+  background-color: #E9FFFF;
+  position: absolute;
+  padding: 0.5% 4%;
+}
+#article.articleType1 {
+  margin-top: 40%;
+  width: 92%;
+}
+#article.articleType2 {
+  margin-top: 0%;
+  width: 50%;
+}
+#article div:nth-child(1) {
+  text-align: center;
+}
+#article div:nth-child(2) {
+  margin-top: 2%;
+  text-align: justify;
+}
