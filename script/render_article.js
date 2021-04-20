@@ -1,5 +1,9 @@
 function articleTitle(value) {
   stopPositionChange = true;
+  document.getElementById("styleTransition").innerHTML = null;
+  try {
+    clearInterval(imageSwitchLoop);
+  } catch {}
   try {
     document.body.classList.remove("animationOne")
   } catch {}
@@ -60,9 +64,9 @@ function articleTitle(value) {
 
           var style = document.getElementById("styleTransition");
 
-          style.innerHTML = "@keyframes example {\n0%   {background-image: " + document.body.style.backgroundImage + ";}\n100% {background-image: url(\"" + path + "/image_" + document.body.currentImage + ".jpeg\");}\n}\n";
+          style.innerHTML = "@keyframes example {\n0%   {background-image: " + document.body.style.backgroundImage + ";}\n50% {background-image: url(\"" + path + "/image_" + document.body.currentImage + ".jpeg\");\n100% {background-image: url(\"" + path + "/image_" + document.body.currentImage + ".jpeg\");}\n}\n";
 
-          style.innerHTML += ".animationOne {\nanimation-name: example;\nanimation-duration: 4s;\nanimation-iteration-count: infinite;}"
+          style.innerHTML += ".animationOne {\nanimation-name: example;\nanimation-duration: 10s;\nanimation-iteration-count: infinite;}"
 
           document.body.classList.add("animationOne");
 
@@ -71,8 +75,8 @@ function articleTitle(value) {
             backgroundImageSrc = path + "/image_" + document.body.currentImage + ".jpeg";
             document.body.style.backgroundImage = "url(\"" + path + "/image_" + document.body.currentImage + ".jpeg" + "\")";
             document.body.classList.remove("animationOne")
-          }, 3000);
-        }, 7000);
+          }, 6000);
+        }, 50000);
       } else {
         backgroundImageSrc.src = path + "/image_1.jpeg";
         backgroundImageSrc = path + "/image_1.jpeg";
