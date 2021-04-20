@@ -65,7 +65,6 @@ function articleTitle(value) {
           var style = document.getElementById("styleTransition");
 
           style.innerHTML = "@keyframes example {\n0%   {background-image: " + document.body.style.backgroundImage + ";}\n50% {background-image: url(\"" + path + "/image_" + document.body.currentImage + ".jpeg\");\n100% {background-image: url(\"" + path + "/image_" + document.body.currentImage + ".jpeg\");}\n}\n";
-
           style.innerHTML += ".animationOne {\nanimation-name: example;\nanimation-duration: 10s;\nanimation-iteration-count: infinite;}"
 
           document.body.classList.add("animationOne");
