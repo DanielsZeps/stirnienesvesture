@@ -75,7 +75,7 @@ function articleTitle(value) {
             backgroundImageSrc = path + "/image_" + document.body.currentImage + ".jpeg";
             document.body.style.backgroundImage = "url(\"" + path + "/image_" + document.body.currentImage + ".jpeg" + "\")";
             document.body.classList.remove("animationOne")
-          }, 6000);
+          }, 7000);
         }, 50000);
       } else {
         backgroundImageSrc.src = path + "/image_1.jpeg";
