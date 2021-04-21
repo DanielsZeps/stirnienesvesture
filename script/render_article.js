@@ -23,7 +23,7 @@ function articleTitle(value) {
   }
   if (value["image"]) {
     if (value["type"] == "type1") {
-      backgroundImageSrc = new Image()
+      backgroundImageSrc = new Image();
       backgroundImageSrc.onload = function() {
         if (this.width > window.innerWidth && window.innerWidth < 1000) {
           document.body.style.backgroundSize = "contain, auto";
