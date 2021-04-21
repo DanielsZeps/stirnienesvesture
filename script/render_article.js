@@ -1,6 +1,6 @@
 function articleTitle(value) {
   stopPositionChange = true;
-  document.getElementById("styleTransition").innerHTML = null;
+  document.getElementById("styleTransition").innerHTML = null
   try {
     clearInterval(imageSwitchLoop);
   } catch {}
@@ -75,7 +75,7 @@ function articleTitle(value) {
             document.body.style.backgroundImage = "url(\"" + path + "/image_" + document.body.currentImage + ".jpeg" + "\")";
             document.body.classList.remove("animationOne")
           }, 7000);
-        }, 10000);
+        }, 30000);
       } else {
         backgroundImageSrc.src = path + "/image_1.jpeg";
         backgroundImageSrc = path + "/image_1.jpeg";
