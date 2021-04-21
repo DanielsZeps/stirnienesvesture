@@ -1,6 +1,6 @@
 function articleTitle(value) {
   stopPositionChange = true;
-  document.getElementById("styleTransition").innerHTML = null
+  document.getElementById("styleTransition").innerHTML = null;
   try {
     clearInterval(imageSwitchLoop);
   } catch {}
