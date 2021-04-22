@@ -137,7 +137,7 @@ function articleTitle(value) {
   article.getElementsByTagName("div")[1].innerHTML = null;
   for (var y = 0; y < x.length; y++) {
     var p = document.createElement("p");
-    p.appendChild( document.createTextNode(x[y]) );
+    p.appendChild(document.createTextNode(x[y]));
     article.getElementsByTagName("div")[1].appendChild(p);
   }
 }
