@@ -77,7 +77,7 @@ function articleTitle(value) {
               document.body.classList.remove("animationOne");
             }
           }, 5000);
-        }, 10000);
+        }, 50000);
       } else {
         backgroundImageSrc.src = path + "/image_1.jpeg";
         backgroundImageSrc = path + "/image_1.jpeg";
