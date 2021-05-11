@@ -4,11 +4,12 @@ body {
   background-size: cover, auto;
   background-repeat: no-repeat;
   margin: 0px;
+  color: #33BF7E;
 }
 #navigation {
   position: fixed;
   width: 100%;
-  background-color: #AFAFAF;
+  background-color: #93F1CF;
   z-index: 20000;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.35), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
